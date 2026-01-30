@@ -48,3 +48,8 @@ python Accromium_builder.py
 - The program generates a responsive HTML file with dark/light theme toggle.  
 - Attached images are copied automatically.
 
+## Example
+- you can see the image what out put you expect.
+  ![EXAMPLE](example.JPG)
+## Demo file
+-bussiness u2.html is a demo file so you can test it.
