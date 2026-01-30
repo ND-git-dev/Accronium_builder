@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Accordion</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .accordion { width: 100%; }
+        .accordion-item, .sub-accordion { margin-bottom: 10px; }
+        .accordion-header, .sub-accordion-header { cursor: pointer; background-color: #f9f9f9; padding: 10px; border: 1px solid #ccc; }
+        .accordion-content, .sub-accordion-content { display: none; padding: 10px; border: 1px solid #ccc; }
+        .accordion-item.active > .accordion-content,
+        .sub-accordion.active > .sub-accordion-content { display: block; }
+        .accordion-header:hover, .sub-accordion-header:hover { background-color: #eaeaea; }
+        /* Add styles for the arrows */
+        .accordion-arrow, .sub-arrow {
+            display: inline-block;
+            margin-right: 5px;
+            transition: transform 0.3s ease;
+        }
+         .accordion-item.active .accordion-arrow,
+         .sub-accordion.active .sub-arrow {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="accordion">
+
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="accordion-arrow">➤</span> LEGAL FORMS OF OWNERSHIP OF BUSINESS
+            </div>
+            <div class="accordion-content">
+                
+                
+                
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="accordion-arrow">➤</span> 2.2 Characteristics of Ideal Form of Business Organization
+            </div>
+            <div class="accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Simple to establish and dissolve
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The desirable form of business is the one, which can be, organized with the least difficulty least expense and which requires minimum effort to fulfill legal requirement. Just like organization, the ideal form of business is that which requires minimum effort to dissolve that business. Dissolution means termination of the operation of that business.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> The requirement of capital
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Sufficient amount of fund is necessary to finance the operation of the business</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Less Risk (limited liability
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>. limited liability. This is a legal condition under which any</li><li>damages or liability attribute to the business will not be attached to the owner’s personal</li><li>property. That means if the business become insolvent or wind up, the owners will be</li><li>responsible only up to the amount they contribute to the business.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Relationship between ownership and management (control)
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>- There is a situation where ownership of the business and management of the business are separated. That means owners may not manage or control the operation of business</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Flexibility of Operation
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>This is the amount of change and adjustment of the organization without difficulty as the need may be</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Continuity and Stability
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>This refers to the extent to which an organization enjoys uninterrupted existence over a long period of time.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Maintenance of secrecy
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>A good form of business organization is the one, which retains the vital business secrets without being leaked out to the competitors.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Less Government Control -
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Different forms of organization are to varying degrees of</li><li>regulation and control by the government.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Less Tax Liability -
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Other things being equal, the ideal form of organization will be that</li><li>which incurred minimum amount of tax liability.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="accordion-arrow">➤</span> LEGAL FORMS OF OWNERSHIP
+            </div>
+            <div class="accordion-content">
+                <ul><li>there are 4 types</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> 1) Sole Proprietorship
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>e defined as a form of business organization in which an individual</li><li>introduces his/her own capital, uses his/her own skill and intelligence, and is solely responsible for the results of its operation.</li><li></li><li>>oldest &  most common</li><li>>there is no distinction between the business and the individual’s private affairs. That means the law recognizes the business and the individual owner as one and the same.</li><li>>A sole proprietor may receive help from others (family) in operating the business, but he/she is usually the only boss</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Advantages of Sole proprietorship
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>A sole proprietor is usually an active manager working in his/her business every day, he/she controls the operations, supervises the employees and makes decisions promptly</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Ownership of all Profits
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>allows the owner to receive all profits generated by the business.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Simple and Low cost of Establishing and dissolution:
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>It is very simple to start and operate a sole proprietorship form of business</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Independence and personal satisfaction
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>the concept of being one’s own boss and the satisfaction for working for them selves.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Tax advantages:
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>double taxation like corporation are avoided</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Retention of business secrecy:
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The sole proprietor is not legally required to publish its financial</li><li>condition nor is it required to make other confidential information public.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Social Acceptability
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>socilay aceptable because wealth is distributed among the majority</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Limitation of Sole Proprietorship
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Unlimited Liability:
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>the individual owner is legally liable for all debts of the business and if his/her original investment will not cover the obligation of the business, the creditors have legal right to claim the personal and legal property of the owner.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Limited resources
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>there is a limitation of financial and human resource</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Difficulties of management:
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>the individual owner must assume the responsibility of a diversification of managerial tasks (hiring employees, purchasing, selling, financing etc.).</li><li>Most failures of the sole proprietorship directly attributed to lack of such managerial capability.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Lack of Continuity:
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Since the business and the owner are one and the same, the death,</li><li>insanity, imprisonment, retirement of the owner or bankruptcy of the business could terminate the life of the business</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> 2)Partnership
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Partnership is legal association of two or more persons as co-owners of a business for profit.</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Features of Partnership
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> I. Formation
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>>It requires the existence of two or more persons.</li><li>>There must be a contractual agreement between the persons known as memorandum of association or articles of partnership</li><li></li><li>>, each partner usually contributes capital, labor, skill etc. to the firm</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> II. Contribution
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The contribution made to this form of ownership of business by each partner can be in the form of cash (money), liability, fixed assets, other property or experience, knowledge, ability etc.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> III. Management Situations
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>, every partner has the right to actively participate in the management of the firm and responsible for the performance of the organization</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> IV. Duration of the Partnership.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The partnership will be terminated if one of the partners withdraw, die, imprisoned, insane, or if the business is bankrupt.</li><li></li><li>>That means the life of the business depends upon the life of the partner.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Types of Partnership
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Partnerships are classified as either general or limited.</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> General partnerships
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>- all partners participate actively in the business and share all responsibilities, including unlimited liability.</li><li></li><li>-general partnership is really a sole proprietorship multiplied by the number of partners.</li><li>-There is no legal limit to the number of partners.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Limited Partnerships
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>-Limited partnership must contain at least one general partner who must assume unlimited liability for all business debts</li><li></li><li>-The purpose of limited partnership is to allow a person to provide</li><li>capital, on which he/she expects a normal return, without assuming liability for debts beyond the amount of his/her investment.</li><li></li><li>-The withdrawal, death or retirement of the limited partner does not dissolve the firm, but if the general partner should withdraw, or die, the partnership would be terminated.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Types of partners
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> a) Secret partners
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>are those partners who are active in the business, but are not known to the general public.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> b) Silent partners.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Silent partners are known to the general public but are not active in</li><li>management of the business.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> c) Dormant partners-
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Dormant partner is neither active in management nor known to the</li><li>public. This type of partner is often limited partner.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> d) Nominal partner-
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Nominal partners invest no capital in a partnership and thus are not truepartners.</li><li>-Instead they often provide experience, special skills or other non-monetary factors of</li><li>value to the business.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Advantages of Partnership
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Ease of organization-
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>all that is essentially needed in the partnership is an agreement between the partners.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Capital availability.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The partnership form of ownership has more than one owner, therefore,</li><li>providing more sources of fund than the sole proprietorship</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Ease of expansion.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Since there is the greater chance of getting large amount of capital, the</li><li>partnership could expand more easily than the sole proprietorship</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Management benefits
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>. Since there are always at least two partners, no one individual is</li><li>forced to handle all the diversified activities. Each partner may control different functions of the firm</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Highest credit standing.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The partnership usually enjoys the highest credit standing as</li><li>compared with the sole proprietorship and the corporation.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Tax benefits.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Just as in the sole proprietorship the partners are taxed as individual and there is no double taxation, as found in the corporate form of business.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Disadvantages of Partnership
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>-Unlimited liability</li><li>-Delay in Decision Making.</li><li>-Lack of Continuity(death end it)</li><li>-Investment withdrawal difficulty</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> 3)Private Limited Company
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Private limited companies are formed from partnership or family business and become incorporated business firm.</li><li>-These are under the control of small number of people or family</li><li>members who are both directors and majority shareholders</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Management of the Company and dissoulition
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>One or more managers manage the private limited company</li><li></li><li>>Thedeath of a member, bankruptcy, or insolvency of a member will not cause dissolution of a</li><li>company.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> 4)Share Company(
+Corporation)
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>- Corporation offers an easier way to finance itself by means of dividing its ownership into many small units that can be sold to a wide economic range of customers</li><li></li><li>- offers a limited liability to the person interested in the enterprise and has unlimited life span not affected by the death of any particular owner or by the transfer of the shares of any particular owner.</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Characteristics of Share Company
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>the property of the corporation is not owned by the persons who own</li><li>shares in corporation, but by the corporation itself.</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Separate legal entity.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>A corporation becomes a legal entity and is granted many of the same rights as individuals. Like any person, the corporation has the right to manage its own affairs,</li><li>the right to produce and sell products to customers</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Limited Liability.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The liability of shareholder is generally limited. This means that the</li><li>shareholder is not personally responsible for the debts and liabilities of the corporation</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Corporation has unlimited life span.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The corporation has the power to continue as a unit forever or for stated period of time regardless of changes in stock ownership.</li><li></li><li>-If no period isfixed for its duration, the corporation will exist indefinitely unless it is legally dissolved. It can be dissolved in only three ways.</li><li>i. By court order</li><li>ii. By the approval of the majority of the stockholders</li><li>iii. By the expiration of the corporate charter. The corporation is not affected or interrupted by the death, withdrawal of any shareholder or director or by insolvency of the company</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Transferability of shares.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The shareholders have the right to transfer or sale their shares to</li><li>others without consent of other members.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Separations of management from ownership
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The shareholders or owners do not have the opportunity to manage the day-to-day operation of the business.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Classifications of Share Company
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Corporations may be classified in terms of their relationship to the public and the nature of their</li><li>activities.</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> I. Public corporations
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>A public corporation is a company whose stock is widely held and available for sale to the general public.</li><li></li><li>-These are businesses owned by large number of public investors</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> II. Private corporations (closely held corporation)
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>A private corporation is a business whose stock is held by small group of individuals and is notnavailable for sale to the general public.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> III. Special service corporations.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>These are corporations formed for transportation, banking, insurance, savings and loan operations and similar specialized functions</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> IV. Non- for profit corporations.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Not all corporations are profit-making institutions. There are many non-profit corporations as well.</li><li>For instance corporations are organized for educational, religious and charitable purposes.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> IV. Non- for profit corporations.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Not all corporations are profit-making institutions. There are many non-profit corporations as</li><li>well.</li><li>For instance corporations are organized for educational, religious and charitable purposes.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Corporate Structure
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> I. The Stockholders
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>- The stockholders are known as the owners of a corporation. They are individuals who buy share of stock that show proof of ownership.</li><li>- They do not own property as the proprietor or partners do in the other form of business.</li><li>- They also do not possess title of the company property, but have direct claim on the property in the event of liquidation after creditors and preferred stockholders</li></ul>
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> types of stock
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> 1)prefered stock
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>are shares whoseowners have first claim on the corporation’s assets and profits but who usually have no voting right in the firm</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> II. The Board of Directors.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Representing the shareholders, the boards of directors are the chief governing body of the corporation.</li><li></li><li>>They choose the president,y decide on major issues and problems,responsible for declaration of dividends.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> III. Officers
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The officers of the corporation are elected by the board of directors and are directly responsible to them for the carrying out of business objectives. They act as agent of the firm because they have the power to bind the corporation contract.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Advantages of Share Company
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Limited Liability:
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The creditors cannot look beyond the assets of the corporation to settle their debts because the corporation is a separate entity.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Capital formation.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Since the corporation can divide its ownership in to shares of small</li><li>denomination, it can attract capital from thousands of individuals of varying income</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Transfer of Ownership.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>In a matter of moments, stockholders are able to buy or sell shares</li><li>through brokers in organized market known as stock exchange/market.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Continuity or stability.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Since the corporations are not dissolved by bankruptcy of the</li><li>company or insanity, withdrawal, death of stockholders change of management or dispute</li><li>over the ownership, they possess perpetual life.</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Possibility of expansion.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Since the corporation uses a large capital investment, it would be</li><li>possible to use latest equipment and machineries in order to carry out its operation at large</li><li>scale.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Disadvantages of Share Company
+            </div>
+            <div class="sub-accordion-content">
+                
+                
+                
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> High cost of organization.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The corporation must get government approval and legal</li><li>assistance in forming this type of ownership</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Double taxation.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The corporate form of organization must pay tax in the same manner as</li><li>individual and result in double taxation of corporate income. Double taxation developed</li><li>first from the taxing of the net profits of the corporation</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Lack of owner’s personal interest.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>Since corporations have thousands of owners who</li><li>usually own a very small part of the business, each one has little interest in the</li><li>management of the firm</li></ul>
+                
+                
+            </div>
+        </div>
+        <div class="sub-accordion">
+            <div class="sub-accordion-header" onclick="toggleAccordion(this.parentElement)">
+                <span class="sub-arrow">➤</span> Lack of secrecy.
+            </div>
+            <div class="sub-accordion-content">
+                <ul><li>The publication of the required financial reports of a corporation becomes a</li><li>matter of public record.</li></ul>
+                
+                
+            </div>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // JavaScript function copied directly from web builder.txt
+        function toggleAccordion(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
